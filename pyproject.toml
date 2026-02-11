@@ -1,0 +1,18 @@
+[project]
+name = "learning-notes-code"
+version = "0.1.0"
+requires-python = ">=3.9"
+description = "Learning Python with data analysis"
+dependencies = [
+    "pandas",
+    "numpy",
+]
+
+[tool.uv]
+index-url = "https://pypi.org/simple"
+
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.2",
+]
