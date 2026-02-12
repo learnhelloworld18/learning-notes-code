@@ -15,4 +15,7 @@ index-url = "https://pypi.org/simple"
 [dependency-groups]
 dev = [
     "pytest>=8.4.2",
+    "pre-commit>=3.0.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
 ]
