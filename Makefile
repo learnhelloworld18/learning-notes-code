@@ -1,6 +1,11 @@
-.PHONY: all sync run pre-commit push
+.PHONY: all sync run pre-commit push pytest
 
 all: sync run
+
+# do not specify the path if you want pytest to discover
+# all tests in the project
+pytest:
+	PYTHONPATH=. uv run -- pytest tests/unit
 
 # Creates .venv/ automatically if missing, then installs deps
 sync:
