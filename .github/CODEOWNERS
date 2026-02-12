@@ -1,0 +1,7 @@
+# CODEOWNERS
+# Format: <path> <@github-username or @org/team>
+# Example:
+# /src/ @your-github-username
+
+# Default owners (replace with real usernames or teams)
+* @learnhelloworld18
