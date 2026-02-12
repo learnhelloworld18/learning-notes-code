@@ -17,7 +17,7 @@ run:
 push: sync pre-commit
 	git add .
 	git commit -m "$(MSG)" || true
-	git push origin $(git rev-parse --abbrev-ref HEAD)
+	git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
 
 
 
