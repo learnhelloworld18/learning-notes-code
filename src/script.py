@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 
 
 def load_data(file_path):
@@ -20,16 +19,18 @@ def check_data(data):
     print(f"\nColumn names and types:\n{data.dtypes}")
     print(f"\nMissing values:\n{data.isnull().sum()}")
     print(f"\nBasic statistics:\n{data.describe()}")
-    print("\n" + "="*30 + "\n")
+    print("\n" + "=" * 30 + "\n")
     return data
+
 
 def main():
     # Load the dataset
-    data = load_data('data.csv')
-    
+    data = load_data("data.csv")
+
     # Display the statistics and quality of the data
     if data is not None:
         check_data(data)
-    
+
+
 if __name__ == "__main__":
     main()
